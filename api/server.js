@@ -7,7 +7,8 @@ const server = express();
 // global middleware 
 server.use(express.json());
 
-
+// server.use(uppercaser); // using custom middleware globally
+// middleware is run in the same order they are defined.
 
 // route handlers 
 server.use('/client', clientRoute)
